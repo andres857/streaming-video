@@ -1,0 +1,11 @@
+vpn
+owncast/data
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.config/
+.docker/
+.profile
+.ssh/
+.viminfo

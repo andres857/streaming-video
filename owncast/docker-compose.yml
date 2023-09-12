@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  owncast:
+    image: owncast/owncast:latest
+    restart: always
+    environment:
+      - VIRTUAL_HOST=rtmp2.windowschannel.tv
+      - LETSENCRYPT_HOST=rtmp2.windowschannel.tv
+      - LETSENCRYPT_EMAIL=info@windowschannel.com
+      - VIRTUAL_PORT=8080
+    ports:
+      - 8050:8080
+      - 1935:1935
+    volumes:
+      - ./data:/app/data
+
+networks:
+  default:
+    name: streaming
+    external: true
