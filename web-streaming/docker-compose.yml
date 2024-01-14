@@ -5,8 +5,8 @@ services:
     image: nginx:stable-alpine3.17
     restart: always
     environment:
-      - VIRTUAL_HOST=live-uvn.windowschannel.com
-      - LETSENCRYPT_HOST=live-uvn.windowschannel.com
+      - VIRTUAL_HOST=live-channel.windowschannel.tv
+      - LETSENCRYPT_HOST=live-channel.windowschannel.tv
       - LETSENCRYPT_EMAIL=info@windowschannel.com
     expose:
       - "80"

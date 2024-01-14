@@ -2,10 +2,10 @@ version: "3.8"
 services:
   owncast:
     image: owncast/owncast:latest
-    restart: always
+    #restart: always
     environment:
-      - VIRTUAL_HOST=rtmp2.windowschannel.tv
-      - LETSENCRYPT_HOST=rtmp2.windowschannel.tv
+      - VIRTUAL_HOST=rtmp-univision.windowschannel.tv
+      - LETSENCRYPT_HOST=rtmp-univision.windowschannel.tv
       - LETSENCRYPT_EMAIL=info@windowschannel.com
       - VIRTUAL_PORT=8080
     ports:
