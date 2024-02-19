@@ -4,12 +4,12 @@ services:
   web:
     image: nginx:stable-alpine3.17
     restart: always
-    environment:
-      - VIRTUAL_HOST=live-channel.windowschannel.tv
-      - LETSENCRYPT_HOST=live-channel.windowschannel.tv
-      - LETSENCRYPT_EMAIL=info@windowschannel.com
-    expose:
-      - "80"
+    #environment:
+        #- VIRTUAL_HOST=live-channel.windowschannel.tv
+        #- LETSENCRYPT_HOST=live-channel.windowschannel.tv
+        #- LETSENCRYPT_EMAIL=info@windowschannel.com
+    ports:
+      - "2628:80"
     volumes:
       - ./html:/usr/share/nginx/html
 
